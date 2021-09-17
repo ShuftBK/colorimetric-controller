@@ -1,7 +1,7 @@
 function color = controlColor(color)
 
-red = [3 5 12 14];      % Red LED Channel
-green = [4 6 11 13];    % Green LED Channel
+red = [1 3 5 7 10 12 14 16];      % Red LED Channel
+green = [2 4 6 8 9 11 13 15];     % Green LED Channel
 
 prompt = 'color? > ';    % Prompt Question
 
