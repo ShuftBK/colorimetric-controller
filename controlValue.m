@@ -14,6 +14,11 @@ while 1
         continue;
     end
     
+    if isnan(str2double(value))
+        disp('input string');
+        continue;
+    end
+    
     value = str2double(value);
     
     if value > 4095
