@@ -14,8 +14,10 @@ classdef ColorControl
         fgreenValue2 = 0;
         
         % color channel
-        redChannel = [1 3 5 7 10 12 14 16];     % Red LED Channel
-        greenChannel =  [2 4 6 8 9 11 13 15];   % Green LED Channel
+%         redChannel = [1 3 5 7 10 12 14 16];     % Red LED Channel
+%         greenChannel =  [2 4 6 8 9 11 13 15];   % Green LED Channel
+        redChannel = [1 2 3 5 6 7 10 11 12 14 15 16];     % Red LED Channel
+        greenChannel =  [4 8 9 13];   % Green LED Channel
     end
     
     methods
