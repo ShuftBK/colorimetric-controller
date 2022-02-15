@@ -1,5 +1,16 @@
+%% CP130 COLOR CONTROL SAMPLE
+
+%% COMPORT SETTINGS
 port = 'COM7'
+
+%% OPEN & START DEVICE CONNECTION 
 device = serialport(port, 115200);
-obj = ColorControl(device)
+
+%% INITIALIZE DEVICE OBJECT
+obj = ColorControl(device);
+
+%% SET STIMULUS VALUE
 obj = obj.setflicker(5000,5000,0,5000);
+
+%% START STIMULUS PRESENTATION
 obj.flicker(1,10)

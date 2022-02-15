@@ -1,11 +1,17 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Class ColorControl
+%  EDIT IN USE
+%  EDIT IN USE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 classdef ColorControl
     % Control color
     properties
         device
         
         % color value
-        redValue = 0;
-        greenValue = 0;
+        redValue = 0;       
+        greenValue = 0;     
         
         % flicker led value
         fredValue1 = 0;
