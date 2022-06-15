@@ -69,24 +69,30 @@ classdef ColorControl
             
             if state == 1
                 for ch = obj.redChannel
-                    writeline(obj.device,strcat('C', num2str(ch) ,':', num2str(obj.fredValue1)))
+%                     writeline(obj.device,strcat('C', num2str(ch) ,':', num2str(obj.fredValue1)))
+                    writeline(obj.device,strcat('R',':', num2str(obj.fredValue1)))
                 end
                 for ch = obj.greenChannel
-                    writeline(obj.device,strcat('C', num2str(ch) ,':', num2str(obj.fgreenValue1)))
+%                     writeline(obj.device,strcat('C', num2str(ch) ,':', num2str(obj.fgreenValue1)))
+                    writeline(obj.device,strcat('G',':', num2str(obj.fgreenValue1)))
                 end
             elseif state == 2
                 for ch = obj.redChannel
-                    writeline(obj.device,strcat('C', num2str(ch) ,':', num2str(obj.fredValue2)))
+%                     writeline(obj.device,strcat('C', num2str(ch) ,':', num2str(obj.fredValue2)))
+                    writeline(obj.device,strcat('R',':', num2str(obj.fredValue2)))
                 end
                 for ch = obj.greenChannel
-                    writeline(obj.device,strcat('C', num2str(ch) ,':', num2str(obj.fgreenValue2)))
+%                     writeline(obj.device,strcat('C', num2str(ch) ,':', num2str(obj.fgreenValue2)))
+                    writeline(obj.device,strcat('G',':', num2str(obj.fgreenValue2)))
                 end
             else
                 for ch = obj.redChannel
-                    writeline(obj.device,strcat('C', num2str(ch) ,':', num2str(obj.redValue)))
+%                     writeline(obj.device,strcat('C', num2str(ch) ,':', num2str(obj.redValue)))
+                    writeline(obj.device,strcat('R',':', num2str(obj.redValue)))
                 end
                 for ch = obj.greenChannel
-                    writeline(obj.device,strcat('C', num2str(ch) ,':', num2str(obj.greenValue)))
+%                     writeline(obj.device,strcat('C', num2str(ch) ,':', num2str(obj.greenValue)))
+                    writeline(obj.device,strcat('G',':', num2str(obj.greenValue)))
                 end
             end
         end
